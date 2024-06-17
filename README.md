@@ -32,6 +32,8 @@ Repository Massive III Bhaskara Chipta_AI Division
 
 ## Validation
 
+# Lets Start Building
+
 ## Idea Background
 
 ### 1. Theme
@@ -53,7 +55,9 @@ Kami menggunakan pandas untuk membersihkan data. Berikut tabel contoh data yang 
 
 Poin soal dataset boleh ditambahkan sesuai kebutuhan.
 
-### 2. Algorithm
+### 2. FlowChart
+
+### 3. Algorithm
 
 - Framework <br />
 Kami menggunakan TensorFlow dan Keras.
