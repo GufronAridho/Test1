@@ -24,6 +24,8 @@ Repository Massive III Bhaskara Chipta_AI Division
 
 ## Dataset and Algorithm
 
+# Lets Build
+
 ### 1. Dataset
 - Data Collection <br />
 Kami menemukan data kami di Kaggle.
