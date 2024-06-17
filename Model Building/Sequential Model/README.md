@@ -19,8 +19,8 @@ Repository Massive III Bhaskara Chipta_AI Division
 </div>
 
 ## Overview
+![Project Flow](https://github.com/GufronAridho/Test1/assets/119670148/33a9655c-7b1f-48cf-8b45-9479c8896811)
 
-<align="center">![Project Flow](https://github.com/GufronAridho/Test1/assets/119670148/33a9655c-7b1f-48cf-8b45-9479c8896811)</p>
 
 # Lets Build
 
