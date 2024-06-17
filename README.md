@@ -28,9 +28,11 @@ Repository Massive III Bhaskara Chipta_AI Division
 
 # Before We Start
 
-## Overview
+### Overview
+Tema : Siaga Gempa Bumi
 
-## Validation
+### Validation
+Masalah : 
 
 # Lets Start Building
 
