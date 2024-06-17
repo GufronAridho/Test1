@@ -27,7 +27,10 @@ Repository Massive III Bhaskara Chipta_AI Division
 
 
 # Before We Start
-## 
+
+## Overview
+
+## Validation
 
 ## Idea Background
 
