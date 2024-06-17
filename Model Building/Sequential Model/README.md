@@ -22,9 +22,9 @@ Repository Massive III Bhaskara Chipta_AI Division
 
 ## Overview
 
-## Dataset and Algorithm
-
 # Lets Build
+
+## Dataset and Algorithm
 
 ### 1. Dataset
 - Data Collection <br />
