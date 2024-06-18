@@ -103,9 +103,6 @@ Kami menggunakan framework dari Tensorflow untuk pembangunan model ini. Model ya
 - Pembangunan Model <br />
 Pada tahap ini saya akan menjelaskan sedikit bagaimana model ini dibuat, untuk pemahaman lebih lanjut disarankan untuk memulai notebook yang ada di repository ini.
 ```
-
-```
-```
 model_name = "bert-base-uncased"
 max_len = 1024
 
