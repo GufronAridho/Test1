@@ -1,4 +1,4 @@
-![image](https://github.com/GufronAridho/Test1/assets/119670148/8d831a1d-b3ff-465b-82fa-a6f5a382c347)<h1 align="center">  This is a Machine Learning / AI Project </h1>
+<h1 align="center">  This is a Machine Learning / AI Project </h1>
 
 <p align="center"> 
 Repository Massive III Bhaskara Chipta_AI Division
@@ -36,6 +36,7 @@ Mengapa ada folder "model building"? Folder tersebut memuat dua hasil pembuatan 
 
 ### Validation
 ![Screenshot 2024-06-18 091122](https://github.com/GufronAridho/Test1/assets/119670148/78b324a9-f44d-459f-807a-9478ac5ec598)
+
 Pada Screnenshot diatas menampilkan penilaian kami memutuskan untuk menggunakan WatsonX Assistant untuk diintegrasikan ke aplikasi mobile project massive collab ini, peniliaanya berupa berikut
 - Data Preperation
 - Model Building
@@ -76,6 +77,7 @@ Data Cleaning yang kami lakukan dibuat secara mmanual, dengan point pemilihan se
 - Data Transformation <br />
 IBM WatsonX Assistant memungkinkan kita untuk mengupload data intents yang kita buat dalam format .csv untuk dijadikan actions dengan format data seperti berikut:
 `<phrase>,<intent>`
+
 Contoh
 ```
 Apa itu gempa bumi?,pengertian_gempa
