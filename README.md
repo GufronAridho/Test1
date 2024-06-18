@@ -65,15 +65,14 @@ Aplikasi Peringatan Gempa yang kami hadirkan merupakan landasan kokoh dalam menj
 
 ### 1. Dataset
 - Data Collection <br />
-Kami menemukan data pertanyaan kami dari berbagai situs yang memuat pembahasan mengenai gempa, beberapa situsnya adalah sebagai berikut:
-
-- https://www.usgs.gov/programs/earthquake-hazards/faqs-category
-- https://www.earthquakescanada.nrcan.gc.ca/info-gen/faq-en.php
-- https://scweb.cwa.gov.tw/en-us/guidance/faq
-- https://www.earthquakes.bgs.ac.uk/education/faqs/faq_index.html
-- https://polarisdrt.org/100-frequently-asked-questions-about-earthquakes-and-their-answers/
-- https://www.bmkg.go.id/
-- https://id.quora.com/
+Kami menemukan data pertanyaan kami dari berbagai situs yang memuat pembahasan mengenai gempa, beberapa situsnya adalah sebagai berikut: <br />
+https://www.usgs.gov/programs/earthquake-hazards/faqs-category <br />
+https://www.earthquakescanada.nrcan.gc.ca/info-gen/faq-en.php <br />
+https://scweb.cwa.gov.tw/en-us/guidance/faq <br />
+https://www.earthquakes.bgs.ac.uk/education/faqs/faq_index.html <br />
+https://polarisdrt.org/100-frequently-asked-questions-about-earthquakes-and-their-answers/ <br />
+https://www.bmkg.go.id/ <br />
+https://id.quora.com/
 
 - Data Cleaning <br />
 Data Cleaning yang kami lakukan dibuat secara mmanual, dengan point pemilihan seperti :
@@ -104,7 +103,11 @@ Apa sih yang dimaksud dengan gempa vulkanik,gempa_vulkanik
 Kami menggunanakan WatsonX Assistant. Dengan versi algoritma terbaru (15-Apr-2023) Yang mana versi algoritma menggunakan foundation model baru untuk meningkatkan deteksi niat dan pencocokan tindakan di asisten, foundation model ini dilatih dengan menggunakan arsitektur transformator.
 
 - Pembangunan Model <br />
-Masukkan kode training dan juga spesifikasi model, seperti epoch, learning rate, batch size, dan lain sebagainya.
+1. Upload Actions melalui csv intents
+     - Pada halaman Actions utama klik ikon uoload intens
+     - Pilih file intens yang anda miliki
+     - Setelah di upload WatsonX akan memvalidasi data anda dan melatih systemnya berdasarkan data tersebut
+     - Jangan lupa untuk memberikan response yaitu jawaban dari pertanyaan tersebut pada action skills yang telah dibuat
 
 - Model Evaluation <br />
 
