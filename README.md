@@ -82,9 +82,8 @@ Data Cleaning yang kami lakukan dibuat secara mmanual, dengan point pemilihan se
 
 - Data Transformation <br />
 IBM WatsonX Assistant memungkinkan kita untuk mengupload data intents yang kita buat dalam format .csv untuk dijadikan actions dengan format data seperti berikut:
-`<phrase>,<intent>`
-
-Contoh
+`<phrase>,<intent>` <br />
+Contoh <br />
 ```
 Apa itu gempa bumi?,pengertian_gempa
 Jelaskan gempa bumi,pengertian_gempa
@@ -94,7 +93,9 @@ Berikan saya definisi gempa vulkanik,gempa_vulkanik
 Apa sih yang dimaksud dengan gempa vulkanik,gempa_vulkanik
 ```
 
-### 2. FlowChart
+### 2. Project FlowChart
+
+![Watson Asisstant Project Flow](https://github.com/GufronAridho/Test1/assets/119670148/642a3d49-b943-4658-aad5-b4454624fcd3)
 
 ### 3. Algorithm
 
