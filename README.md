@@ -125,9 +125,9 @@ Kita sudah membuat Action yang akan dipakai oleh chatbot untuk menjawab pertanya
 
 - Model Evaluation <br />
 
-
 ## Prototype
 Disesuaikan dengan kebutuhan atau bisa ditiru dari laporan dokumentasi massive.
+Kaasih foto
 
 ## Integration
 Disesuaikan dengan kebutuhan atau bisa ditiru dari laporan dokumentasi massive.
