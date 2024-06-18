@@ -1,5 +1,9 @@
 ## Overview
-README ini akan menjelaskan pembangunan model LLM dari HuggingFace yaitu BERT.
+README ini akan menjelaskan pembangunan model LLM dari HuggingFace yaitu BERT. Sebelum itu untuk memulai notebook tersebut disarankan untuk menggunakan Google Colab dengan cara:
+1. Download file .ipynb
+2. Buka Google Colab dan klik Open Colab
+3. Buka tab Upload lalu cari atau tarik file .ipynb ini
+   
 # Lets Build
 
 ## Dataset and Algorithm
@@ -94,25 +98,123 @@ Contoh
 ### 2. Algorithm
 
 - Framework <br />
-Kami menggunakan TensorFlow dan Keras.
+Kami menggunakan Transformer untuk melakukan fine tuning model BERT nya dan menggunakan fuction yang ada pada libary sklearn dan tensorflow/keras untuk memprocesing data jsonnya
 
 - Pembangunan Model <br />
-Masukkan kode training dan juga spesifikasi model, seperti epoch, learning rate, batch size, dan lain sebagainya.
+Pada tahap ini saya akan menjelaskan sedikit bagaimana model ini dibuat, untuk pemahaman lebih lanjut disarankan untuk memulai notebook yang ada di repository ini.
+Dimulai dari menginstall LLM BERT dan tokenizer dari Transformer tersebut
+```
+
+```
+```
+model_name = "bert-base-uncased"
+max_len = 1024
+
+tokenizer = BertTokenizer.from_pretrained(model_name,
+                                          max_length=max_len)
+
+model = BertForSequenceClassification.from_pretrained(model_name,
+                                                      num_labels=num_labels,
+                                                      id2label=id2label,
+                                                      label2id = label2id)
+```
+
+Setelah beberapa proses preprocesing data kita akan membuat data train dan test untuk model
+```
+train_dataloader = DataLoader(train_encoding, y_train)
+test_dataloader = DataLoader(test_encoding, y_test)
+```
+
+Latih model menggunakan libary dari transformer dengan argumen seperti berikut :
+```
+training_args = TrainingArguments(
+    output_dir='/content/drive/MyDrive/Massive/output',
+    do_train=True,
+    do_eval=True,
+    num_train_epochs=50,
+    per_device_train_batch_size=32,
+    per_device_eval_batch_size=16,
+    warmup_steps=10,
+    weight_decay=0.05,
+    logging_strategy='steps',
+    logging_dir='./multi-class-logs',
+    logging_steps=50,
+    evaluation_strategy="steps",
+    eval_steps=50,
+    save_strategy="steps",
+    load_best_model_at_end=True,
+    report_to="wandb"
+)
+```
+Membuat evaluation metriks untuk mengetahui kinerja model
+```
+def compute_metrics(pred):
+
+    labels = pred.label_ids
+    preds = pred.predictions.argmax(-1)
+    precision, recall, f1, _ = precision_recall_fscore_support(labels, preds, average='macro')
+    acc = accuracy_score(labels, preds)
+
+    return {
+        'Accuracy': acc,
+        'F1': f1,
+        'Precision': precision,
+        'Recall': recall
+    }
+```
+```
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    train_dataset=train_dataloader,
+    eval_dataset=test_dataloader,
+    compute_metrics= compute_metrics
+)
+```
+```
+trainer.train()
+```
 
 - Model Evaluation <br />
-Masukkan metrik evaluasi model seperti accuracy, precision, recall, F1-score, dan lain - lain.
+
+```
+### Training and Validation Results
+
+| Step | Training Loss | Validation Loss | Accuracy | F1      | Precision | Recall  |
+|------|---------------|-----------------|----------|---------|-----------|---------|
+| 50   | 4.570200      | 4.360112        | 0.034091 | 0.006034| 0.004900  | 0.029514|
+| 100  | 3.924800      | 3.614377        | 0.291667 | 0.202102| 0.209414  | 0.273264|
+| 150  | 3.111000      | 2.878671        | 0.545455 | 0.421424| 0.412895  | 0.513021|
+| 200  | 2.371800      | 2.300424        | 0.636364 | 0.522862| 0.529903  | 0.589089|
+| ...  | ...           | ...             | ...      | ...     | ...       | ...     |
+| 1050 | 0.037500      | 0.386949        | 0.920455 | 0.923070| 0.929799  | 0.908431|
+| 1100 | 0.036200      | 0.382586        | 0.920455 | 0.923070| 0.929975  | 0.909350|
+| 1150 | 0.034900      | 0.384120        | 0.920455 | 0.923070| 0.929975  | 0.909350|
+| 1200 | 0.034300      | 0.384150        | 0.920455 | 0.923070| 0.929975  | 0.909350|
+| 1250 | 0.033400      | 0.384457        | 0.920455 | 0.923070| 0.929975  | 0.909350|
+```
+```
+### Evaluation Results
+
+|       | eval_loss | eval_Accuracy | eval_F1 | eval_Precision | eval_Recall |
+|-------|-----------|---------------|---------|----------------|-------------|
+| train | 0.027204  | 1.000000      | 1.00000 | 1.000000       | 1.00000     |
+| test  | 0.386129  | 0.920455      | 0.90935 | 0.929975       | 0.92307     |
+
+```
 
 ## Prototype
 Disesuaikan dengan kebutuhan atau bisa ditiru dari laporan dokumentasi massive.
+tarok foro
 
 ## Integration
-Disesuaikan dengan kebutuhan atau bisa ditiru dari laporan dokumentasi massive.
+Model ini tidak diintegrasikan 
 
 ## Deployment
-Disesuaikan dengan kebutuhan atau bisa ditiru dari laporan dokumentasi massive.
+Model ini tidak di deploy
 
 ## Result
-Disesuaikan dengan kebutuhan atau bisa ditiru dari laporan dokumentasi massive.
+Model ini masih berada pada tahap model building karena chatbot yang kami gunakan untuk integrasi ke mobile adalah WatsonX Assitant
+Untuk mendownload hasil dari model ini bisa dilihat pada [Drive](https://drive.google.com/drive/folders/1zfYDZhWlqwweCn97jv-DaBJHgQsQk_jX?usp=sharing) Folder chatbot.
 
-## Conclusion
-Disesuaikan dengan kebutuhan atau bisa ditiru dari laporan dokumentasi massive.
+
