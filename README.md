@@ -102,12 +102,26 @@ Apa sih yang dimaksud dengan gempa vulkanik,gempa_vulkanik
 - Framework <br />
 Kami menggunanakan WatsonX Assistant. Dengan versi algoritma terbaru (15-Apr-2023) Yang mana versi algoritma menggunakan foundation model baru untuk meningkatkan deteksi niat dan pencocokan tindakan di asisten, foundation model ini dilatih dengan menggunakan arsitektur transformator.
 
-- Pembangunan Model <br />
+- Pembangunan Model
+
+Akan saya jelaskan 2 cara untuk membuat Actions skills untuk chatbot ini, yaitu:
 1. Upload Actions melalui csv intents
-     - Pada halaman Actions utama klik ikon uoload intens
-     - Pilih file intens yang anda miliki
-     - Setelah di upload WatsonX akan memvalidasi data anda dan melatih systemnya berdasarkan data tersebut
-     - Jangan lupa untuk memberikan response yaitu jawaban dari pertanyaan tersebut pada action skills yang telah dibuat
+     - Pada halaman Actions utama klik ikon upload intens
+     - Pilih file intens yang Anda miliki
+     - Setelah di upload WatsonX akan memvalidasi data Anda dan melatih systemnya berdasarkan data tersebut
+2. Membuat Actions secara manual
+     - Pada halaman Actions utama klik "New Actions"
+     - Pada bagian "Add example phrase:" Isi dengan Masukkan frasa yang diketik atau diucapkan pelanggan untuk memulai percakapan tentang topik tertentu. Frasa ini menentukan tugas, masalah, atau pertanyaan yang dimiliki pelanggan Anda. Semakin banyak frasa yang Anda masukkan, semakin baik asisten Anda mengenali apa yang diinginkan pelanggan.
+
+Sekarang kita sudah memiliki Actions, waktu nya untuk menambah response atau jawaban dari Actions atau pertanyaan yang sudah kita buat. 
+1. Pada halaman Actions utama pilih Actions yang sudah dibuat
+2. Pada Conversation steps Anda bisa menambahkan apa yang harus assistant katanan, isi "Assistant says" dengan jawaban dari pertanyaan tersebut
+3. Kita bisa mengkomplekskan jawaban dari chatbot ini dengan menambah Options pada "Define customer response" untuk disambungkan ke Actions lainnya, contoh jika kita masuk ke Actions "jenis gempa" kita bisa menyambungkannya ke Actions lain seperti "gemppa tektonik", "gempa vulkanik", "gempa buatan" dan lain lain. Cara nya adalah sebagai berikut:
+     - Buat Options pada steps nya
+     - Buat steps baru dan atur Is taken menjadi with condition dan sesuaikan conditions nya dengan Options yang telah dibuat
+     - Scroll kebawah dan pada bagian And Then ubah menjadi Goes to a subaction dan atur sesuai dengan Actions mana yang Anda mau
+
+Kita sudah membuat Action yang akan dipakai oleh chatbot untuk menjawab pertanyaan pengguna nantinya, jangan lupa untuk mereview chatbot yang telah dibuat dan mempublish dengan cara pergi ke tab Publish lalu klik Publish. 
 
 - Model Evaluation <br />
 
