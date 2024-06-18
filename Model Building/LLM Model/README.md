@@ -104,9 +104,6 @@ Kami menggunakan Transformer untuk melakukan fine tuning model BERT nya dan meng
 Pada tahap ini saya akan menjelaskan sedikit bagaimana model ini dibuat, untuk pemahaman lebih lanjut disarankan untuk memulai notebook yang ada di repository ini.
 Dimulai dari menginstall LLM BERT dan tokenizer dari Transformer tersebut
 ```
-
-```
-```
 model_name = "bert-base-uncased"
 max_len = 1024
 
