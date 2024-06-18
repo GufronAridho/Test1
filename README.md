@@ -1,4 +1,4 @@
-<h1 align="center">  This is a Machine Learning / AI Project </h1>
+![image](https://github.com/GufronAridho/Test1/assets/119670148/8d831a1d-b3ff-465b-82fa-a6f5a382c347)<h1 align="center">  This is a Machine Learning / AI Project </h1>
 
 <p align="center"> 
 Repository Massive III Bhaskara Chipta_AI Division
@@ -60,11 +60,31 @@ Solusi : Aplikasi Peringatan Gempa yang kami hadirkan merupakan landasan kokoh d
 
 ### 1. Dataset
 - Data Collection <br />
-Kami menemukan data kami di Kaggle.
-- Data Cleaning <br />
-Kami menggunakan pandas untuk membersihkan data. Berikut tabel contoh data yang belum dibersihkan dan yang sudah: 
+Kami menemukan data pertanyaan kami dari berbagai situs yang memuat pembahasan mengenai gempa, beberapa situsnya adalah sebagai berikut:
+https://www.usgs.gov/programs/earthquake-hazards/faqs-category
+https://www.earthquakescanada.nrcan.gc.ca/info-gen/faq-en.php
+https://scweb.cwa.gov.tw/en-us/guidance/faq
+https://www.earthquakes.bgs.ac.uk/education/faqs/faq_index.html
+https://polarisdrt.org/100-frequently-asked-questions-about-earthquakes-and-their-answers/
+https://www.bmkg.go.id/
 
-Poin soal dataset boleh ditambahkan sesuai kebutuhan.
+- Data Cleaning <br />
+Data Cleaning yang kami lakukan dibuat secara mmanual, dengan point pemilihan seperti :
+> "Apakah pertanyaan tersebut relate ke wilayah Indonesia ?"
+> "Apakah pertanyaan tersebut berguna ?"
+
+- Data Transformation <br />
+IBM WatsonX Assistant memungkinkan kita untuk mengupload data intents yang kita buat dalam format .csv untuk dijadikan actions dengan format data seperti berikut:
+`<phrase>,<intent>`
+Contoh
+```
+Apa itu gempa bumi?,pengertian_gempa
+Jelaskan gempa bumi,pengertian_gempa
+Pengertian dari gempa bumi,pengertian_gempa
+Apa yang dimaksud dengan gempa vulkanik,gempa_vulkanik
+Berikan saya definisi gempa vulkanik,gempa_vulkanik
+Apa sih yang dimaksud dengan gempa vulkanik,gempa_vulkanik
+```
 
 ### 2. FlowChart
 
