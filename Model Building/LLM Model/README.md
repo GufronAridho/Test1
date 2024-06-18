@@ -1,6 +1,5 @@
 ## Overview
-README ini akan menjelaskan pembangunan model LLM dengan harapan mendapatkan sebuah model ML yang memiliki NLP yang lebih bagus 
-
+README ini akan menjelaskan pembangunan model LLM dari HuggingFace yaitu BERT.
 # Lets Build
 
 ## Dataset and Algorithm
