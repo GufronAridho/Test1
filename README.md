@@ -82,8 +82,9 @@ Data Cleaning yang kami lakukan dibuat secara mmanual, dengan point pemilihan se
 
 - Data Transformation <br />
 IBM WatsonX Assistant memungkinkan kita untuk mengupload data intents yang kita buat dalam format .csv untuk dijadikan actions dengan format data seperti berikut:
-`<phrase>,<intent>` <br />
-Contoh <br />
+`<phrase>,<intent>`
+
+Contoh 
 ```
 Apa itu gempa bumi?,pengertian_gempa
 Jelaskan gempa bumi,pengertian_gempa
@@ -100,13 +101,13 @@ Apa sih yang dimaksud dengan gempa vulkanik,gempa_vulkanik
 ### 3. Algorithm
 
 - Framework <br />
-Kami menggunakan TensorFlow dan Keras.
+Kami menggunanakan WatsonX Assistant. Dengan versi algoritma terbaru (15-Apr-2023) Yang mana versi algoritma menggunakan foundation model baru untuk meningkatkan deteksi niat dan pencocokan tindakan di asisten, foundation model ini dilatih dengan menggunakan arsitektur transformator.
 
 - Pembangunan Model <br />
 Masukkan kode training dan juga spesifikasi model, seperti epoch, learning rate, batch size, dan lain sebagainya.
 
 - Model Evaluation <br />
-Masukkan metrik evaluasi model seperti accuracy, precision, recall, F1-score, dan lain - lain.
+
 
 ## Prototype
 Disesuaikan dengan kebutuhan atau bisa ditiru dari laporan dokumentasi massive.
