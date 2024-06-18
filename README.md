@@ -118,8 +118,8 @@ Sekarang kita sudah memiliki Actions, waktu nya untuk menambah response atau jaw
 2. Pada Conversation steps Anda bisa menambahkan apa yang harus assistant katanan, isi "Assistant says" dengan jawaban dari pertanyaan tersebut
 3. Kita bisa mengkomplekskan jawaban dari chatbot ini dengan menambah Options pada "Define customer response" untuk disambungkan ke Actions lainnya, contoh jika kita masuk ke Actions "jenis gempa" kita bisa menyambungkannya ke Actions lain seperti "gemppa tektonik", "gempa vulkanik", "gempa buatan" dan lain lain. Cara nya adalah sebagai berikut:
      - Buat Options pada steps nya
-     - Buat steps baru dan atur Is taken menjadi with condition dan sesuaikan conditions nya dengan Options yang telah dibuat
-     - Scroll kebawah dan pada bagian And Then ubah menjadi Goes to a subaction dan atur sesuai dengan Actions mana yang Anda mau
+     - Buat steps baru dan atur "Is taken" menjadi "with condition" dan sesuaikan conditions nya dengan Options yang telah dibuat
+     - Scroll kebawah dan pada bagian "And Then" ubah menjadi "Goes to a subaction" dan atur sesuai dengan Actions mana yang Anda mau
 
 Kita sudah membuat Action yang akan dipakai oleh chatbot untuk menjawab pertanyaan pengguna nantinya, jangan lupa untuk mereview chatbot yang telah dibuat dan mempublish dengan cara pergi ke tab Publish lalu klik Publish. 
 
