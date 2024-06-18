@@ -77,7 +77,7 @@ https://www.bmkg.go.id/
 
 - Data Cleaning <br />
 Data Cleaning yang kami lakukan dibuat secara mmanual, dengan point pemilihan seperti :
-> "Apakah pertanyaan tersebut relate ke wilayah Indonesia ?"
+> "Apakah pertanyaan tersebut relate ke wilayah Indonesia ?" <br />
 > "Apakah pertanyaan tersebut berguna ?"
 
 - Data Transformation <br />
