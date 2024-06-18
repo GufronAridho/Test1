@@ -62,11 +62,17 @@ Solusi : Aplikasi Peringatan Gempa yang kami hadirkan merupakan landasan kokoh d
 ### 1. Dataset
 - Data Collection <br />
 Kami menemukan data pertanyaan kami dari berbagai situs yang memuat pembahasan mengenai gempa, beberapa situsnya adalah sebagai berikut:
+
 https://www.usgs.gov/programs/earthquake-hazards/faqs-category
+
 https://www.earthquakescanada.nrcan.gc.ca/info-gen/faq-en.php
+
 https://scweb.cwa.gov.tw/en-us/guidance/faq
+
 https://www.earthquakes.bgs.ac.uk/education/faqs/faq_index.html
+
 https://polarisdrt.org/100-frequently-asked-questions-about-earthquakes-and-their-answers/
+
 https://www.bmkg.go.id/
 
 - Data Cleaning <br />
@@ -82,8 +88,8 @@ Contoh
 ```
 Apa itu gempa bumi?,pengertian_gempa
 Jelaskan gempa bumi,pengertian_gempa
-Pengertian dari gempa bumi,pengertian_gempa
-Apa yang dimaksud dengan gempa vulkanik,gempa_vulkanik
+Bisakah Anda menjelaskan tingkatan skala SIG BMKG?,tingkatan_skala_sig
+Tingkatan skala SIG BMKG dijelaskan bagaimana?,tingkatan_skala_sig
 Berikan saya definisi gempa vulkanik,gempa_vulkanik
 Apa sih yang dimaksud dengan gempa vulkanik,gempa_vulkanik
 ```
