@@ -29,10 +29,19 @@ Repository Massive III Bhaskara Chipta_AI Division
 # Before We Start
 
 ### Overview
-Tema : Siaga Gempa Bumi
+
+Repository ini akan memuat keseluruhan hasil dari apa saja yang telah kami lakukan. Pada README ini, saya akan menjelaskan lebih dalam mengenai WatsonX Assistant, sebuah layanan dari IBM Cloud yang memungkinkan pembuatan chatbot dan integrasinya yang lebih mudah ke aplikasi mobile.
+
+Mengapa ada folder "model building"? Folder tersebut memuat dua hasil pembuatan model ML kami menggunakan TensorFlow dan Huggingface Transformer.
 
 ### Validation
-Masalah : 
+![Screenshot 2024-06-18 091122](https://github.com/GufronAridho/Test1/assets/119670148/78b324a9-f44d-459f-807a-9478ac5ec598)
+Pada Screnenshot diatas menampilkan penilaian kami memutuskan untuk menggunakan WatsonX Assistant untuk diintegrasikan ke aplikasi mobile project massive collab ini, peniliaanya berupa berikut
+- Data Preperation
+- Model Building
+- Model Evaluation
+- Integration
+- Response
 
 # Lets Start Building
 
@@ -42,10 +51,10 @@ Masalah :
 Tema : Siaga Gempa Bumi
 
 ### 2. Problem
-Masalah : 
+Masalah : Gempa bumi, sebagai fenomena alam yang tidak dapat diprediksi secara pasti, terus menjadi ancaman serius bagi kehidupan manusia dan infrastruktur di Indonesia. Meskipun telah ada kemajuan dalam pemahaman gempa dan upaya mitigasi risiko, sejumlah tantangan kritis masih harus diatasi. Selain itu, pemahaman masyarakat mengenai ketahanan infrastruktur terhadap gempa masih terbilang minim. Penelitian prediksi gempa, pendidikan masyarakat dan pemulihan pasca-gempa juga merupakan masalah yang memerlukan perhatian lebih.Oleh karna itu, pernyataan awal masalah ini mendukung penelitian prediksi gempa dan memperkuat upaya pemulihan pasca-gempa untuk mengurangi dampak negatif gempa bumi pada manusia, ekonomi dan lingkungan, dan menyoroti perlunya fokus lebih lanjut dalam meningkatkan pemahaman masyarakat  terhadap ketahanan infrastruktur
 
 ### 3. Solution
-Solusi : 
+Solusi : Aplikasi Peringatan Gempa yang kami hadirkan merupakan landasan kokoh dalam menjawab tantangan kritis terkait keamanan dan kesigapan masyarakat di hadapan potensi bahaya gempa. Kami tidak hanya berfokus pada memberikan informasi, tetapi juga memberikan kontribusi yang positif dan berdampak nyata dalam upaya penanggulangan dampak bencana. Dengan memadukan teknologi dan pemahaman mendalam terhadap kebutuhan masyarakat, fitur-fitur seperti SOS yang dapat melakukan pemanggilan darurat dengan cepat serta memberikan notifikasi peringatan gempa kepada warga di sekitar pusat gempa. Fitur riwayat juga memberikan riwayat lengkap dan bisa mengetahui daerah yang rawan akan terjadinya gempa. Sementara itu edukasi membantu masyarakat mengetahui informasi gempa melalui artikel dan video dan fitur Mari Bertanya  dengan implementasi chatbot yang mampu melayani masyarakat tanpa batasan waktu pada pertanyaan yang ia miliki dan juga Tidak lupa donasi akan sangat membantu warga yang terkena dampak terjadinya gempa. Dalam aplikasi ini membentuk solusi komprehensif yang menggabungkan pendidikan, respons darurat, serta aksesibilitas untuk menciptakan ekosistem yang aman dan siap menghadapi risiko gempa.
 
 ## Dataset and Algorithm
 
