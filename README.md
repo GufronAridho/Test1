@@ -52,10 +52,14 @@ Pada Screnenshot diatas menampilkan penilaian kami memutuskan untuk menggunakan 
 Tema : Siaga Gempa Bumi
 
 ### 2. Problem
-Masalah : Gempa bumi, sebagai fenomena alam yang tidak dapat diprediksi secara pasti, terus menjadi ancaman serius bagi kehidupan manusia dan infrastruktur di Indonesia. Meskipun telah ada kemajuan dalam pemahaman gempa dan upaya mitigasi risiko, sejumlah tantangan kritis masih harus diatasi. Selain itu, pemahaman masyarakat mengenai ketahanan infrastruktur terhadap gempa masih terbilang minim. Penelitian prediksi gempa, pendidikan masyarakat dan pemulihan pasca-gempa juga merupakan masalah yang memerlukan perhatian lebih.Oleh karna itu, pernyataan awal masalah ini mendukung penelitian prediksi gempa dan memperkuat upaya pemulihan pasca-gempa untuk mengurangi dampak negatif gempa bumi pada manusia, ekonomi dan lingkungan, dan menyoroti perlunya fokus lebih lanjut dalam meningkatkan pemahaman masyarakat  terhadap ketahanan infrastruktur
+Masalah : 
+
+Gempa bumi, sebagai fenomena alam yang tidak dapat diprediksi secara pasti, terus menjadi ancaman serius bagi kehidupan manusia dan infrastruktur di Indonesia. Meskipun telah ada kemajuan dalam pemahaman gempa dan upaya mitigasi risiko, sejumlah tantangan kritis masih harus diatasi. Selain itu, pemahaman masyarakat mengenai ketahanan infrastruktur terhadap gempa masih terbilang minim. Penelitian prediksi gempa, pendidikan masyarakat dan pemulihan pasca-gempa juga merupakan masalah yang memerlukan perhatian lebih.Oleh karna itu, pernyataan awal masalah ini mendukung penelitian prediksi gempa dan memperkuat upaya pemulihan pasca-gempa untuk mengurangi dampak negatif gempa bumi pada manusia, ekonomi dan lingkungan, dan menyoroti perlunya fokus lebih lanjut dalam meningkatkan pemahaman masyarakat  terhadap ketahanan infrastruktur
 
 ### 3. Solution
-Solusi : Aplikasi Peringatan Gempa yang kami hadirkan merupakan landasan kokoh dalam menjawab tantangan kritis terkait keamanan dan kesigapan masyarakat di hadapan potensi bahaya gempa. Kami tidak hanya berfokus pada memberikan informasi, tetapi juga memberikan kontribusi yang positif dan berdampak nyata dalam upaya penanggulangan dampak bencana. Dengan memadukan teknologi dan pemahaman mendalam terhadap kebutuhan masyarakat, fitur-fitur seperti SOS yang dapat melakukan pemanggilan darurat dengan cepat serta memberikan notifikasi peringatan gempa kepada warga di sekitar pusat gempa. Fitur riwayat juga memberikan riwayat lengkap dan bisa mengetahui daerah yang rawan akan terjadinya gempa. Sementara itu edukasi membantu masyarakat mengetahui informasi gempa melalui artikel dan video dan fitur Mari Bertanya  dengan implementasi chatbot yang mampu melayani masyarakat tanpa batasan waktu pada pertanyaan yang ia miliki dan juga Tidak lupa donasi akan sangat membantu warga yang terkena dampak terjadinya gempa. Dalam aplikasi ini membentuk solusi komprehensif yang menggabungkan pendidikan, respons darurat, serta aksesibilitas untuk menciptakan ekosistem yang aman dan siap menghadapi risiko gempa.
+Solusi : 
+
+Aplikasi Peringatan Gempa yang kami hadirkan merupakan landasan kokoh dalam menjawab tantangan kritis terkait keamanan dan kesigapan masyarakat di hadapan potensi bahaya gempa. Kami tidak hanya berfokus pada memberikan informasi, tetapi juga memberikan kontribusi yang positif dan berdampak nyata dalam upaya penanggulangan dampak bencana. Dengan memadukan teknologi dan pemahaman mendalam terhadap kebutuhan masyarakat, fitur-fitur seperti SOS yang dapat melakukan pemanggilan darurat dengan cepat serta memberikan notifikasi peringatan gempa kepada warga di sekitar pusat gempa. Fitur riwayat juga memberikan riwayat lengkap dan bisa mengetahui daerah yang rawan akan terjadinya gempa. Sementara itu edukasi membantu masyarakat mengetahui informasi gempa melalui artikel dan video dan fitur Mari Bertanya  dengan implementasi chatbot yang mampu melayani masyarakat tanpa batasan waktu pada pertanyaan yang ia miliki dan juga Tidak lupa donasi akan sangat membantu warga yang terkena dampak terjadinya gempa. Dalam aplikasi ini membentuk solusi komprehensif yang menggabungkan pendidikan, respons darurat, serta aksesibilitas untuk menciptakan ekosistem yang aman dan siap menghadapi risiko gempa.
 
 ## Dataset and Algorithm
 
@@ -63,17 +67,13 @@ Solusi : Aplikasi Peringatan Gempa yang kami hadirkan merupakan landasan kokoh d
 - Data Collection <br />
 Kami menemukan data pertanyaan kami dari berbagai situs yang memuat pembahasan mengenai gempa, beberapa situsnya adalah sebagai berikut:
 
-https://www.usgs.gov/programs/earthquake-hazards/faqs-category
-
-https://www.earthquakescanada.nrcan.gc.ca/info-gen/faq-en.php
-
-https://scweb.cwa.gov.tw/en-us/guidance/faq
-
-https://www.earthquakes.bgs.ac.uk/education/faqs/faq_index.html
-
-https://polarisdrt.org/100-frequently-asked-questions-about-earthquakes-and-their-answers/
-
-https://www.bmkg.go.id/
+- https://www.usgs.gov/programs/earthquake-hazards/faqs-category
+- https://www.earthquakescanada.nrcan.gc.ca/info-gen/faq-en.php
+- https://scweb.cwa.gov.tw/en-us/guidance/faq
+- https://www.earthquakes.bgs.ac.uk/education/faqs/faq_index.html
+- https://polarisdrt.org/100-frequently-asked-questions-about-earthquakes-and-their-answers/
+- https://www.bmkg.go.id/
+- https://id.quora.com/
 
 - Data Cleaning <br />
 Data Cleaning yang kami lakukan dibuat secara mmanual, dengan point pemilihan seperti :
